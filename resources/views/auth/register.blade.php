@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="bg-info">
+<section class="">
     <div class="mask d-flex align-items-center h-100 gradient-custom-3">
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div class="card gradient-custom" style="border-radius: 15px;">
+            <div class="card bg-info" style="border-radius: 15px;">
               <div class="card-body p-5">
-                <h2 class="text-uppercase text-center mb-5">Create User</h2>
+                <h2 class="fw-bold mb-2 text-uppercase text-center">Create User</h2>
   
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
@@ -48,7 +48,7 @@
                   </div>
   
                   <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-danger btn-block btn-lg gradient-custom-4 text-white">Register</button>
+                    <button type="submit" class="text-center btn btn-outline-light bg-red px-5">Register</button>
                   </div>  
                 </form>
   

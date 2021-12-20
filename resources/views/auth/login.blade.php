@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="vh-100 gradient-custom">
+<section class="vh-100">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -31,6 +31,10 @@
                   </span>
                   @enderror
                 </div>
+                <label>
+                  <input type="checkbox" name="remember" value="">
+                    Remember my session
+              </label>
                 @if (Route::has('password.request'))
                   <p class="small mb-5 pb-lg-2"><a class="text-black" href="{{ route('password.request') }}">Forgot password?</a></p>
                 @endif
